@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="About.html">About</a></li>
+  <li><a>Information</a></li>
+  <li><a>Images</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+<div class="hero-image">
+  <div class="text-contact">
+
+
+<div>
+        <h1> Use this page to contact our support team</h1>
+
+        <div>
+<form enctype="text/plain" name="myForm" action="CampThailand" method="post" onsubmit="validate();">
+<label>Name:</label>
+<input name="name" type="text" required />
+<br /><br />
+<label>Email:</label>
+<input name="email" type="text" required />
+<br /><br />
+<label>Enquiry:</label>
+<textarea name="enquiry" cols=“” rows="" required></textarea>
+<br /><br />
+<input class="btn" name="reset" type="reset" value="Clear" />
+<input class="btn" name="submit" type="submit" value="Submit" />
+ </form>
+</div>
+<!--end main -->
+
+<script>
+function validate()
+{
+    namefield=myForm.name.value;
+    if (namefield=="")
+    {
+        alert("You must enter your name.");
+        event.returnValue=false;
+    }
+    emailfield=myForm.email.value;
+    if (emailfield=="")
+    {
+        alert("You must enter your Email Address.");
+        event.returnValue=false;
+    }
+    enquiryfield=myForm.enquiry.value;
+    if (enquiryfield=="")
+    {
+        alert("You must enter your Enquiry.");
+        event.returnValue=false;
+    }
+}
+</script>
+  </div>
+</div>
+
+
+
+</div> 
+</body>
+</html>
