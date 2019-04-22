@@ -1,0 +1,45 @@
+
+
+<script>
+name=prompt("Please enter your email", "")
+if (name!="")
+{
+document.write("Hello " + email + "! Welcome to our Store!")
+}
+else
+{
+document.write("Hello User! Welcome to our Store!")
+}
+</script>
+
+<script>
+function validate()
+{
+    namefield=myForm.name.value;
+    if (namefield=="")
+    {
+        alert("You must enter your name.");
+        event.returnValue=false;
+    }
+    emailfield=myForm.email.value;
+    if (emailfield=="")
+    {
+        alert("You must enter your Email Address.");
+        event.returnValue=false;
+    }
+    enquiryfield=myForm.enquiry.value;
+    if (enquiryfield=="")
+    {
+        alert("You must enter your Enquiry.");
+        event.returnValue=false;
+    }
+}
+
+</script>
+
+<script>
+function hello() //This is where the function is named
+{
+alert("Please be nice to eachother!");
+}
+</script>
